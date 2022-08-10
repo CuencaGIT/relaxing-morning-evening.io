@@ -6,7 +6,7 @@ body {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 90vh;
+  height: 100vmin;
   overflow: hidden;
   transition: 2s ease-in-out;
 }
@@ -23,7 +23,8 @@ main {
   background-size: cover;
   text-align: center;
   justify-content: center;
-  padding-top: 15em;
+  position: relative;
+  top: 13em;
 }
 main i {
   font-size: 4em;
@@ -56,4 +57,52 @@ main .fa-sun {
 }
 main .fa-moon {
   color: gray;
+}
+#about {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-family: cursive;
+  padding: 0.3em 1em;
+  background-color: beige;
+  transition: 0.3s ease-out;
+  border-radius: 0.3em;
+}
+#about strong {
+  font-weight: 100;
+}
+#about strong:hover {
+  font-weight: 100;
+  color: aliceblue;
+  transition: 0.3s ease-in;
+}
+#about:hover {
+  color: black;
+  background-color: transparent;
+  transition: 0.4s ease-in;
+  letter-spacing: 0.5em;
+}
+#about #una {
+  transition: 0.3s ease-in;
+}
+#about #una:hover {
+  transition: 0.5s ease-out;
+}
+#about #pangalawa {
+  transition: 0.5s ease-out;
+}
+#about #pangatlo {
+  transition: 0.5s ease-out;
+}
+#about #pangapat {
+  transition: 0.5s ease-out;
+}
+#about #panglima {
+  transition: 0.5s ease-out;
 }

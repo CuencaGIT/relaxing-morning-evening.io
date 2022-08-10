@@ -1,0 +1,65 @@
+@import url('http://fonts.cdnfonts.com/css/hacker-argot');
+body {
+  font-family: 'Hacker Argot', sans-serif;
+  background-color: black;
+}
+main {
+  text-align: center;
+  color: rgb(180, 250, 40);
+  letter-spacing: 0.3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 3s ease-in-out;
+  animation-name: easing;
+  animation-duration: 3s;
+}
+main h1 {
+  font-size: 3em;
+}
+main a {
+  color: white;
+}
+a:hover {
+  color: cornflowerblue;
+  transition: 0.7s ease-out;
+}
+@keyframes easing {
+  from {
+    top: 90%;
+    left: 30%;
+  }
+  to {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+main .overlay {
+  position: fixed;
+  top: 0em;
+  left: 0em;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+main .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: black;
+  border: 2px solid white;
+  width: 40em;
+  height: 15em;
+  z-index: 2;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+main h1 span {
+  color: white;
+  cursor: pointer;
+}

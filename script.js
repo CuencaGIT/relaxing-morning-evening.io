@@ -4,8 +4,54 @@ let mrng = document.getElementById('sun-moon');
 let stp = document.getElementById('ply-stp');
 let audio = document.getElementById('play');
 let music = document.getElementById('music');
+let una = document.getElementById('una');
+let pangalawa = document.getElementById('pangalawa');
+let pangatlo = document.getElementById('pangatlo');
+let pangapat = document.getElementById('pangapat');
+let panglima = document.getElementById('panglima');
+let about = document.getElementById('about');
 var count = 0;
 
+$(una).hover(
+  function () {
+    about.style.color = 'aqua';
+  },
+  function () {
+    about.style.color = 'black';
+  }
+);
+$(pangalawa).hover(
+  function () {
+    about.style.color = 'yellow';
+  },
+  function () {
+    about.style.color = 'black';
+  }
+);
+$(pangatlo).hover(
+  function () {
+    about.style.color = 'red';
+  },
+  function () {
+    about.style.color = 'black';
+  }
+);
+$(pangapat).hover(
+  function () {
+    about.style.color = 'chocolate';
+  },
+  function () {
+    about.style.color = 'black';
+  }
+);
+$(panglima).hover(
+  function () {
+    about.style.color = 'cadetblue';
+  },
+  function () {
+    about.style.color = 'black';
+  }
+);
 $('#incon').click(function () {
   $(this).toggleClass('fa-solid fa-heart');
   $(this).toggleClass('fa-heart');
